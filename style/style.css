@@ -1,0 +1,305 @@
+/* -----------------COLORS------------------ */
+:root {
+  --white: #ffffff;
+  --accent-orange: #ff6c00;
+  --text-dark-grey: #555555;
+  --headings-dark-grey: #303030;
+  --prices-blue-grey: #9da4bd;
+  --dark-subheading: rgba(157, 164, 189, 0.6);
+  --accent-background: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-dark-grey);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* images no gap */
+.no-gap {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ------------------------HEADER------------------------ */
+
+.header {
+  background-color: aliceblue;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation-item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+  color: var(--accent-orange);
+}
+
+/* ----------------------MAIN------------------------ */
+/* ----------------------HERO------------------------ */
+
+.hero-section {
+  background-color: #565656;
+}
+.hero-subheader {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--dark-subheading);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  color: var(--white);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--prices-blue-grey);
+
+  margin: 0;
+}
+/* --------------------ABOUT------------------------- */
+
+.about-wrap {
+  display: flex;
+}
+.about-block {
+  display: block;
+}
+.about-subheading {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--text-dark-grey);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-header {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--headings-dark-grey);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.66;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-story {
+  font-size: 14px;
+  line-height: 1.85;
+
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+/* ------------------------PRICES------------------------ */
+
+.section-prices {
+  background-color: #676363;
+}
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.prices-list {
+  border: 2px solid #6f6f6f;
+  background-color: rgba(23, 26, 36, 0.2);
+
+  width: calc((100% - 30px) / 2);
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item + .prices-item {
+  margin-top: 20px;
+}
+.prices-subheading {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--dark-subheading);
+
+  margin: 0;
+}
+
+.prices-heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.6;
+  color: var(--white);
+
+  margin: 0;
+}
+
+.prices-list-heading {
+  font-size: 18px;
+  line-height: 1.66px;
+  color: var(--prices-blue-grey);
+
+  margin: 0;
+}
+
+.prices-list-price {
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--prices-blue-grey);
+
+  margin: 0;
+}
+
+/* ---------------------REASONS--------------------- */
+
+/* -------------------OUR BARBERS---------------------- */
+
+.section-barbers {
+  background-color: var(--accent-background);
+}
+
+.barbers-subheading {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--headings-dark-grey);
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.barbers-heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--headings-dark-grey);
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.section-barbers .list {
+  display: flex;
+  gap: 30px;
+  width: calc(100% - 60px) / 3;
+}
+
+.barbers-list-item {
+  text-align: center;
+}
+
+.barbers-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.barbers-list-heading {
+  font-size: 18px;
+  line-height: 1.38;
+  color: var(--headings-dark-grey);
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.barbers-list-text {
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--accent-orange);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* ---------------------GALLERIE--------------------- */
+
+.gallerie-subheading {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section-gallerie .list {
+  display: flex;
+  gap: 30px;
+}
+/* ---------------------CONTACTS----------------------- */
+
+.section-contacts {
+  background-color: #565656;
+}
