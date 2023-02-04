@@ -36,6 +36,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -55,15 +57,74 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+/* -----------------------BUTTONS--------------------- */
 
+.button-white {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white);
+  border: 1px solid var(--accent-orange);
+  border-radius: 25px;
+  background-color: transparent;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  min-width: 160px;
+}
+.button-white:hover,
+.button-white:focus {
+  background-color: var(--accent-orange);
+}
+
+.button-black {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--headings-dark-grey);
+  border: 1px solid var(--accent-orange);
+  border-radius: 25px;
+  background-color: transparent;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  min-width: 160px;
+}
+.button-black:hover,
+.button-black:focus {
+  color: var(--white);
+  background-color: var(--accent-orange);
+}
 /* ------------------------HEADER------------------------ */
 
 .header {
-  background-color: aliceblue;
+  background-color: #6f6f6f;
+  padding-top: 52px;
 }
 
 .navigation {
   display: flex;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .list {
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
+}
+
+.logo {
+  margin-right: 130px;
 }
 .navigation-item {
   font-weight: 600;
@@ -78,11 +139,49 @@ body {
   color: var(--accent-orange);
 }
 
+.header-phone-nr {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-left: auto;
+  margin-right: 42px;
+}
+
+.header-phone-nr:hover,
+.header-phone-nr:focus {
+  color: var(--accent-orange);
+}
+
 /* ----------------------MAIN------------------------ */
 /* ----------------------HERO------------------------ */
 
 .hero-section {
-  background-color: #565656;
+}
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  width: 100px;
+}
+.hero-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--headings-dark-grey);
+}
+.hero-item:hover,
+.hero-item:focus {
+  color: var(--accent-orange);
+}
+
+.hero-content {
+  background-color: #6f6f6f;
+  flex-grow: 1;
+  padding: 272px 100px 208px;
 }
 .hero-subheader {
   font-weight: 600;
@@ -115,11 +214,20 @@ body {
 }
 /* --------------------ABOUT------------------------- */
 
+.about-section {
+}
 .about-wrap {
   display: flex;
+  gap: 30px;
 }
 .about-block {
   display: block;
+  max-width: 470px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
 }
 .about-subheading {
   font-weight: 600;
@@ -196,7 +304,8 @@ body {
   text-transform: uppercase;
   color: var(--dark-subheading);
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .prices-heading {
@@ -206,7 +315,8 @@ body {
   line-height: 1.6;
   color: var(--white);
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 44px;
 }
 
 .prices-list-heading {
@@ -225,7 +335,81 @@ body {
   margin: 0;
 }
 
+.section-prices .button-white {
+  display: block;
+  margin: 0 auto;
+}
+
 /* ---------------------REASONS--------------------- */
+
+.reasons-section {
+}
+.reasons-list-wrap .list {
+  display: flex;
+}
+.reasons-list-wrap {
+  width: 370px;
+  margin-right: auto;
+}
+.reasons-list-item {
+  border: 1px solid black;
+  padding: 20px 24px;
+  width: 170px;
+}
+.reasons-list-item > span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  color: var(--headings-dark-grey);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.reasons-list-item sup {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1, 37;
+  color: var(--accent-orange);
+}
+.reasons-list-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--headings-dark-grey);
+  text-align: center;
+  max-width: 122px;
+  margin: 0;
+}
+
+.reasons-content-wrap {
+  width: 500px;
+  margin-left: auto;
+}
+
+.reasons-subheader {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--headings-dark-grey);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.reasons-header {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--headings-dark-grey);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.reasons-text {
+  font-size: 18px;
+  line-height: 1.66;
+  margin: 0;
+}
 
 /* -------------------OUR BARBERS---------------------- */
 
@@ -302,4 +486,63 @@ body {
 
 .section-contacts {
   background-color: #565656;
+}
+
+.contacts-header {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--white);
+}
+
+.contacts-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--prices-blue-grey);
+}
+
+.contacts-phone-nr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--prices-blue-grey);
+}
+.contacts-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--prices-blue-grey);
+  text-decoration: underline;
+}
+
+/* -----------------FOOTER-------------------- */
+.footer-section {
+  padding: 56px 0;
+}
+.footer-wrap {
+  display: flex;
+}
+.copyright {
+  margin: 0;
+}
+.footer-social-media {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
+.footer-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--headings-dark-grey);
+}
+.footer-item:hover,
+.footer-item:focus {
+  color: var(--accent-orange);
 }
